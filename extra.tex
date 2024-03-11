@@ -1,0 +1,32 @@
+\usepackage[legalpaper, margin=1in]{geometry}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{chngcntr}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{subfig}
+\usepackage{longtable}
+\usepackage{dblfloatfix}
+\usepackage{listings}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[style=ieee]{biblatex}
+
+\addbibresource{refs.bib}
+\DeclareCiteCommand{\citetitle}
+{\boolfalse{citetracker}%
+	\boolfalse{pagetracker}%
+	\usebibmacro{prenote}}
+{\ifciteindex
+	{\indexfield{indextitle}}
+	{}%
+	\printtext[bibhyperref]{\printfield[citetitle]{labeltitle}}}
+{\multicitedelim}
+{\usebibmacro{postnote}}
+
+\counterwithin{figure}{section}
+\hyphenation{op-tical net-works semi-conduc-tor}
